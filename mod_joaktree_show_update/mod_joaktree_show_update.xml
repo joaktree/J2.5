@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension 	type="module" version="2.5.0" client="site" method="upgrade">
+	<name>mod_joaktree_show_update</name>
+	<author>Jan Suhr, Color Consult AB</author>
+	<creationDate>July 2012</creationDate>
+    <copyright>This module its released under GPL/GNU License</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>info@colorconsult.se</authorEmail>
+	<authorUrl>www.colorconsult.se</authorUrl>
+	<version>2.5.0</version>
+	<description>MOD_JOAKTREE_SHOW_UPDATE_DESC</description>
+	<files>
+		<filename module="mod_joaktree_show_update">mod_joaktree_show_update.php</filename>
+		<filename module="mod_joaktree_show_update">helper.php</filename>
+		<filename module="mod_joaktree_show_update">index.html</filename>
+		<filename module="mod_joaktree_show_update">mod_joaktree_show_update.xml</filename>
+		<folder>tmpl</folder>
+		<filename module="mod_joaktree_show_update">tmpl/default.php</filename>
+		<filename module="mod_joaktree_show_update">tmpl/index.html</filename>
+	</files>
+	<languages>
+        <language tag="en-GB">language/en-GB/en-GB.mod_joaktree_show_update.sys.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.mod_joaktree_show_update.ini</language>
+        <language tag="sv-SE">language/sv-SE/sv-SE.mod_joaktree_show_update.sys.ini</language>
+        <language tag="sv-SE">language/sv-SE/sv-SE.mod_joaktree_show_update.ini</language>
+    </languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				 <field name="cache" type="list" default="0" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+                <field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+			</fieldset>	
+		</fields>
+	</config>
+</extension>
