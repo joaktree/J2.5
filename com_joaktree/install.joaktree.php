@@ -2,7 +2,7 @@
 /**
  * Joomla! component Joaktree
  *
- * @version	1.4.3
+ * @version	1.4.5
  * @author	Niels van Dantzig
  * @package	Joomla
  * @subpackage	Joaktree
@@ -19,7 +19,7 @@
 defined('_JEXEC') or die('Restricted access');
 
 // Version
-$version = 'v1.4.3';
+$version = 'v1.4.5';
 
 // Initialize the database
 $db =& JFactory::getDBO();

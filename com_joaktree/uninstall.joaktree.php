@@ -2,7 +2,7 @@
 /**
  * Joomla! component Joaktree
  *
- * @version	1.4.2
+ * @version	1.4.5
  * @author	Niels van Dantzig
  * @package	Joomla
  * @subpackage	Joaktree
@@ -29,6 +29,7 @@ $application = JFactory::getApplication();
 // $update_queries[] = 'DROP TABLE IF EXISTS #__joaktree_display_settings ';
 // $update_queries[] = 'DROP TABLE IF EXISTS #__joaktree_themes ';
 // $update_queries[] = 'DROP TABLE IF EXISTS #__joaktree_trees ';
+// $update_queries[] = 'DROP TABLE IF EXISTS #__joaktree_registry_items ';
 
 // Drop the following tables
 $update_queries[] = 'DROP TABLE IF EXISTS #__joaktree_citations ';
@@ -45,7 +46,6 @@ $update_queries[] = 'DROP TABLE IF EXISTS #__joaktree_person_documents ';
 $update_queries[] = 'DROP TABLE IF EXISTS #__joaktree_person_events ';
 $update_queries[] = 'DROP TABLE IF EXISTS #__joaktree_person_names ';
 $update_queries[] = 'DROP TABLE IF EXISTS #__joaktree_person_notes ';
-$update_queries[] = 'DROP TABLE IF EXISTS #__joaktree_registry_items ';
 $update_queries[] = 'DROP TABLE IF EXISTS #__joaktree_relations ';
 $update_queries[] = 'DROP TABLE IF EXISTS #__joaktree_relation_events ';
 $update_queries[] = 'DROP TABLE IF EXISTS #__joaktree_relation_notes ';
@@ -60,5 +60,5 @@ foreach( $update_queries as $query ) {
 }
 
 // Set a simple message
-$application->enqueueMessage( JText::_( 'NOTE: Five database tables were NOT removed to allow for upgrades' ), 'notice' ) ;
+$application->enqueueMessage( JText::_( 'NOTE: Six database tables were NOT removed to allow for upgrades' ), 'notice' ) ;
 ?>
